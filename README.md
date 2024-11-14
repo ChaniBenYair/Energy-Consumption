@@ -44,3 +44,5 @@ Run the local server:
 
 npm run dev
 Your application should now be running at http://localhost:3000.
+
+After opening the app in your browser, click on the Add Device button to add your first device and populate the database with initial data.
