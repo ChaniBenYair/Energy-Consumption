@@ -28,18 +28,18 @@ Before running the project, ensure you have the following installed:
 ```bash
 git clone https://github.com/your-username/energy-consumption-tracking.git
 cd energy-consumption-tracking
-2. Install Dependencies
+### 2. Install Dependencies
 Run the following command to install the necessary dependencies:
 
 npm install
-3. Configure MongoDB Atlas
+### 3. Configure MongoDB Atlas
 Create a MongoDB Atlas cluster.
 Add a .env file in the root directory of the project with the following content:
 env
 MONGODB_URI=your-mongodb-connection-string
 Replace your-mongodb-connection-string with the connection string for your MongoDB Atlas cluster.
 
-4. Start the Local Server
+### 4. Start the Local Server
 Run the local server:
 
 npm run dev
