@@ -46,8 +46,7 @@ Set Up Environment Variables: Create a .env file in the root directory with the 
 
 env
 Copy code
-MONGODB_URI=your-mongodb-connection-string
-Replace your-mongodb-connection-string with your actual MongoDB Atlas connection string.
+MONGODB_URI=mongodb+srv://energy-database:123@cluster0.i9xvd.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0
 
 Run the Application:
 
@@ -117,7 +116,7 @@ Fork the Repository on GitHub.
 Clone your fork:
 bash
 Copy code
-git clone https://github.com/your-username/energy-consumption-tracker.git
+git clone https://github.com/ChaniBenYair/Energy-Consumption.git
 Create a New Branch for your changes:
 bash
 Copy code
