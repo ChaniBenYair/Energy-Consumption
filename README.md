@@ -26,7 +26,7 @@ Before running the project, ensure you have the following installed:
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/your-username/energy-consumption-tracking.git
+git clone https://github.com/your-username/energy-consumption.git
 cd energy-consumption-tracking
 ### 2. Install Dependencies
 Run the following command to install the necessary dependencies:
