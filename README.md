@@ -40,37 +40,36 @@ Follow these steps to set up the project locally:
    ```bash
    git clone https://github.com/your-username/energy-consumption-tracker.git
    cd energy-consumption-tracker
-   
-**2. Install Dependencies:**
+    ```
+2. **Install Dependencies:**
    ```bash
    npm install
    ```
-**3. Set Up Environment Variables: Create a .env file in the root directory with the following content:**
+3. **Set Up Environment Variables: Create a .env file in the root directory with the following content:**
    ```bash
-   MONGODB_URI=your-mongodb-connection-string
-   Replace your-mongodb-connection-string with your MongoDB Atlas connection string.
-
-**4. Run the Application:**
-```bash
-npm run dev
-The app should now be running at http://localhost:3000.
-
-🧭 Usage
-Open the app in your browser at http://localhost:3000.
-Add information for each device:
-Device Name
-Power (in Watts)
-Daily Usage Hours
-See real-time calculations for:
-Daily Cost
-Weekly Cost
-Monthly Cost
+   MONGODB_URI=mongodb+srv://energy-database:123@cluster0.i9xvd.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0
+    ```
+4. **Run the Application:**
+   ```bash
+   npm run dev
+    ```
+   The app should now be running at http://localhost:3000.
+## 🧭 Usage
+1. Open the app in your browser at http://localhost:3000.
+2. Add information for each device:
+- Device Name
+- Power (in Watts)
+- Daily Usage Hours
+3. See real-time calculations for:
+- Daily Cost
+- Weekly Cost
+- Monthly Cost
 The data is saved in MongoDB Atlas to maintain continuous tracking of each device's usage and energy costs.
 
-🔢 Calculations
+## 🔢 Calculations
 The system uses the following formulas to calculate electricity costs:
 
-Daily Cost:
+- Daily Cost:
 
 Device Power
 ×
@@ -96,13 +95,13 @@ Example: For a 100W device with 5 daily usage hours:
 ‘
 ‘
 100×5×0.001×0.5=0.25₪‘‘‘
-Weekly Cost:
+- Weekly Cost:
 
 Daily Cost
 ×
 7
 Daily Cost×7
-Monthly Cost:
+- Monthly Cost:
 
 Daily Cost
 ×
@@ -110,30 +109,30 @@ Daily Cost
 Daily Cost×30
 Electricity Cost per kWh is set to 0.5 ₪.
 
-⚙️ Environment Variables
+## ⚙️ Environment Variables
 The project requires the following environment variable:
 
-MONGODB_URI: MongoDB Atlas connection string for storing and managing table data.
-🤝 Contributing
-Fork the repository on GitHub.
-Clone your fork:
-bash
-Copy code
+- MONGODB_URI: MongoDB Atlas connection string for storing and managing table data.
+## 🤝 Contributing
+1. **Fork** the repository on GitHub.
+2. **Clone** your fork:
+ ```bash
 git clone https://github.com/your-username/energy-consumption-tracker.git
-Create a New Branch for your changes:
-bash
-Copy code
+ ```
+3. **Create a New Branch** for your changes:
+ ```bash
 git checkout -b feature/YourFeatureName
-Commit your changes:
-bash
-Copy code
+ ```
+4. **Commit** your changes:
+ ```bash
 git commit -m 'Add some feature'
-Push the Branch to your fork:
-bash
-Copy code
+ ```
+5. **Push the Branch** to your fork:
+ ```bash
 git push origin feature/YourFeatureName
-Open a Pull Request.
-📜 License
+ ```
+Open a **Pull Request**.
+## 📜 License
 The project is licensed under the MIT License. For more information, see the LICENSE file.
 
-Happy Tracking! 🎉
+## Happy Tracking! 🎉
