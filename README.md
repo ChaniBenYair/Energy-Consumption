@@ -76,7 +76,7 @@ Daily Usage Hours
 Electricity Cost per kWh
 Device Power×Daily Usage Hours×0.001×Electricity Cost per kWh
 Example: For a 100W device with 5 daily usage hours:
- ````
+
 100
 ×
 5
