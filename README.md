@@ -43,7 +43,7 @@ Follow these steps to set up the project locally:
    ```bash
    npm install
    ```
-3. **Set Up Environment Variables: Create a .env file in the root directory with the following content:**
+3. **Set Up Environment Variables: Create a .env.local file in the root directory with the following content:**
    ```bash
    MONGODB_URI=mongodb+srv://energy-database:123@cluster0.i9xvd.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0
     ```
