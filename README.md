@@ -1,48 +1,137 @@
-# Energy Consumption Tracking System
+📊 Energy Consumption Tracking System
+A smart energy tracking system for calculating the daily, weekly, and monthly energy consumption costs of various home devices. Users can input their daily usage, and the system will automatically calculate and display the energy costs for each device.
 
-## Overview
+🌐 Table of Contents
+Project Overview
+Features
+Technologies Used
+Installation
+Usage
+Calculations
+Environment Variables
+Contributing
+License
+📜 Project Overview
+The Energy Consumption Tracking System is a tool designed to assist users in tracking energy consumption of various smart home devices, such as lights, air conditioners, and refrigerators. This system calculates energy costs based on the device's power rating and usage time input by the user.
 
-The Energy Consumption Tracking System is a web application designed to calculate and display the energy consumption costs for various smart home devices. It allows users to input daily usage hours for devices such as lights, air conditioners, refrigerators, and washing machines, and provides real-time calculations for daily, weekly, and monthly consumption costs.
+✨ Features
+Real-Time Cost Calculations: Calculates daily, weekly, and monthly consumption costs in real-time based on user input.
+Interactive Table Management: Built using the TanStack React Table library for seamless state and data management.
+Database Storage: Stores table data and updates using MongoDB Atlas.
+Minimalistic Styling: Styled exclusively with Tailwind CSS for a clean, responsive interface.
+Bonus: Fetch data using the SWR library for optimal server data retrieval.
+🛠️ Technologies Used
+Next.js (version 13+)
+React (version 18+)
+TypeScript
+MongoDB Atlas (database)
+TanStack React Table (table management)
+SWR (server-side data fetching)
+Tailwind CSS (styling)
+🚀 Installation
+Follow these steps to set up the project locally:
 
-## Technology Stack
+Clone the Repository:
 
-- **Next.js (Version 13+)**
-- **TypeScript**
-- **React (Version 18+)**
-- **MongoDB Atlas** for database storage
-- **TanStack React Table** for table management
-- **Tailwind CSS** for styling
-- **SWR** for data fetching and real-time updates
+bash
+Copy code
+git clone https://github.com/your-username/energy-consumption-tracker.git
+cd energy-consumption-tracker
+Install Dependencies:
 
-## Project Setup
-
-### Prerequisites
-
-Before running the project, ensure you have the following installed:
-- Node.js (version 18 or higher)
-- npm or yarn
-- MongoDB Atlas account and database setup
-
-### 1. Clone the repository
-
-```bash
-git clone https://github.com/your-username/energy-consumption.git
-cd energy-consumption-tracking
-### 2. Install Dependencies
-Run the following command to install the necessary dependencies:
-
+bash
+Copy code
 npm install
-### 3. Configure MongoDB Atlas
-Create a MongoDB Atlas cluster.
-Add a .env file in the root directory of the project with the following content:
+Set Up Environment Variables: Create a .env file in the root directory with the following content:
+
 env
+Copy code
 MONGODB_URI=your-mongodb-connection-string
-Replace your-mongodb-connection-string with the connection string for your MongoDB Atlas cluster.
+Replace your-mongodb-connection-string with your actual MongoDB Atlas connection string.
 
-### 4. Start the Local Server
-Run the local server:
+Run the Application:
 
+bash
+Copy code
 npm run dev
-Your application should now be running at http://localhost:3000.
+The app should now be running at http://localhost:3000.
 
-After opening the app in your browser, click on the Add Device button to add your first device and populate the database with initial data.
+🧭 Usage
+Open the application in your browser at http://localhost:3000.
+Add information for each device:
+Device Name
+Power (in Watts)
+Daily Usage Hours
+See real-time calculations for:
+Daily Cost
+Weekly Cost
+Monthly Cost
+The data is stored in a MongoDB Atlas cluster, ensuring persistent tracking of device information and usage patterns.
+
+🔢 Calculations
+The application uses these formulas to calculate energy costs:
+
+Daily Cost:
+
+Device Power
+×
+Daily Usage Hours
+×
+0.001
+×
+Electricity Cost per kWh
+Device Power×Daily Usage Hours×0.001×Electricity Cost per kWh
+Example: For a device with 100W power and 5 hours of daily usage:
+
+100
+×
+5
+×
+0.001
+×
+0.5
+=
+0.25
+₪
+100×5×0.001×0.5=0.25₪
+Weekly Cost:
+
+Daily Cost
+×
+7
+Daily Cost×7
+Monthly Cost:
+
+Daily Cost
+×
+30
+Daily Cost×30
+The Electricity Cost per kWh is set to 0.5 ₪.
+
+⚙️ Environment Variables
+The project requires the following environment variable:
+
+MONGODB_URI: MongoDB Atlas connection string to store and manage the table data.
+🤝 Contributing
+Fork the Repository on GitHub.
+Clone your fork:
+bash
+Copy code
+git clone https://github.com/your-username/energy-consumption-tracker.git
+Create a New Branch for your changes:
+bash
+Copy code
+git checkout -b feature/YourFeatureName
+Commit your changes:
+bash
+Copy code
+git commit -m 'Add some feature'
+Push the branch to your fork:
+bash
+Copy code
+git push origin feature/YourFeatureName
+Open a Pull Request.
+📜 License
+This project is licensed under the MIT License. See the LICENSE file for more information.
+
+Happy Tracking! 🎉
