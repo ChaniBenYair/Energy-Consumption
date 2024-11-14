@@ -42,13 +42,16 @@ Follow these steps to set up the project locally:
    cd energy-consumption-tracker
    
 **2. Install Dependencies:**
+```bash
 npm install
 
 **3. Set Up Environment Variables: Create a .env file in the root directory with the following content:**
+```bash
 MONGODB_URI=your-mongodb-connection-string
 Replace your-mongodb-connection-string with your MongoDB Atlas connection string.
 
 **4. Run the Application:**
+```bash
 npm run dev
 The app should now be running at http://localhost:3000.
 
