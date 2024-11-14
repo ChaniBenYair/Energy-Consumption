@@ -84,9 +84,6 @@ Example: For a 100W device with 5 daily usage hours:
 0.001
 ×
 0.5
-=
-0.25
-₪
 
 - Weekly Cost:
 
