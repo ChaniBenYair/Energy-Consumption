@@ -1,4 +1,4 @@
-ה# 📊 Energy Consumption Tracking System
+## 📊 Energy Consumption Tracking System
 
 A smart system to track and calculate daily, weekly, and monthly energy costs for various household devices. Users can input daily usage hours, and the system will calculate and display the energy costs for each device.
 
