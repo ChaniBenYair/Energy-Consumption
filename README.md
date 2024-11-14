@@ -44,7 +44,7 @@ Follow these steps to set up the project locally:
 **2. Install Dependencies:**
    ```bash
    npm install
-
+   ```
 **3. Set Up Environment Variables: Create a .env file in the root directory with the following content:**
    ```bash
    MONGODB_URI=your-mongodb-connection-string
