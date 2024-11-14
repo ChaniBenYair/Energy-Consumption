@@ -86,7 +86,6 @@ export default function DeviceTable() {
 
   return (
     <div className="container mx-auto p-6">
-      <AddDevice/>
       <FetchDevices onDataFetched={setData} />
       <table className="min-w-full bg-white border border-gray-300 rounded-lg shadow-md overflow-hidden">
         <thead className="bg-gray-200">
