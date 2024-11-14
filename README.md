@@ -37,6 +37,7 @@ The **Energy Consumption Tracking System** helps users monitor energy consumptio
 Follow these steps to set up the project locally:
 
 1. **Clone the Repository**:
+   ```bash
    git clone https://github.com/your-username/energy-consumption-tracker.git
    cd energy-consumption-tracker
    
@@ -47,10 +48,7 @@ npm install
 MONGODB_URI=your-mongodb-connection-string
 Replace your-mongodb-connection-string with your MongoDB Atlas connection string.
 
-Run the Application:
-
-bash
-Copy code
+**4. Run the Application:**
 npm run dev
 The app should now be running at http://localhost:3000.
 
