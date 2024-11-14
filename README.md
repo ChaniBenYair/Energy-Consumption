@@ -37,6 +37,8 @@ Follow these steps to set up the project locally:
 1. **Clone the Repository**:
    ```bash
    git clone https://github.com/ChaniBenYair/Energy-Consumption.git
+   ```
+   ```bash
    cd energy-consumption-tracker
     ```
 2. **Install Dependencies:**
